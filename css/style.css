@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #07070a;
+  color: #8b93a5;
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* A faint pool of light behind the play area, like a candle on a map table. */
+  background-image: radial-gradient(ellipse at 50% 40%, #14141c 0%, #07070a 70%);
+}
+
+#frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  max-width: 100%;
+}
+
+#game {
+  display: block;
+  width: min(96vw, calc(96vh * 1.6));
+  aspect-ratio: 960 / 600;
+  height: auto;
+  background: #0a0c10;
+  border: 1px solid #2a2f3d;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #05060a, 0 18px 60px rgba(0, 0, 0, 0.8);
+  /* Keep the hand-drawn shapes crisp but let the canvas scale to the window. */
+  image-rendering: auto;
+  cursor: default;
+}
+
+#controls {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #6d7488;
+  max-width: 900px;
+}
+
+#controls b {
+  color: #b9c0d0;
+  font-weight: 600;
+}
